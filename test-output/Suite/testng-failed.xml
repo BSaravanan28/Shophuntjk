@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="FT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.shophunt.testscript.VerifyTheCreateCategoryModule">
+        <methods>
+          <include name="CreateCategory"/>
+        </methods>
+      </class> <!-- org.shophunt.testscript.VerifyTheCreateCategoryModule -->
+      <class name="org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent">
+        <methods>
+          <include name="CreateSubcategory"/>
+        </methods>
+      </class> <!-- org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

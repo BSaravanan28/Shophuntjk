@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Distributed]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent">
+        <methods>
+          <include name="CreateSubcategory"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAs"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent -->
+      <class name="org.shophunt.testscript.VerifyThatProductIsAddedToAddCartThroughWishlist">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAs"/>
+          <include name="configAC"/>
+          <include name="Wishlist"/>
+        </methods>
+      </class> <!-- org.shophunt.testscript.VerifyThatProductIsAddedToAddCartThroughWishlist -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="org.shophunt.testscript.VerifyTheCreateCategoryModule">
+        <methods>
+          <include name="CreateCategory"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAs"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- org.shophunt.testscript.VerifyTheCreateCategoryModule -->
+      <class name="org.shophunt.testscript.ShophuntFinalScript">
+        <methods>
+          <include name="CreateSubcategory"/>
+          <include name="Wishlist"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="CreateCategory"/>
+          <include name="configAs"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- org.shophunt.testscript.ShophuntFinalScript -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Distributed] -->

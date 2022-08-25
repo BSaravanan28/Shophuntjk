@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-25T10:55:23 IST" name="Default suite" finished-at="2022-08-25T10:55:28 IST" duration-ms="5536">
+    <groups>
+      <group name="smoke">
+        <method signature="VerifyTheCreateSubCategoryPageComponent.CreateSubcategory()[pri:0, instance:org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent@48f278eb]" name="CreateSubcategory" class="org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-08-25T10:55:23 IST" name="Default test" finished-at="2022-08-25T10:55:28 IST" duration-ms="5536">
+      <class name="org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent@48f278eb]" started-at="2022-08-25T10:55:23 IST" name="configBS" finished-at="2022-08-25T10:55:23 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent@48f278eb]" started-at="2022-08-25T10:55:23 IST" name="configBC" finished-at="2022-08-25T10:55:25 IST" duration-ms="2110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method signature="CreateSubcategory()[pri:0, instance:org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent@48f278eb]" started-at="2022-08-25T10:55:25 IST" name="CreateSubcategory" finished-at="2022-08-25T10:55:28 IST" duration-ms="3231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSubcategory -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent@48f278eb]" started-at="2022-08-25T10:55:28 IST" name="configAC" finished-at="2022-08-25T10:55:28 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAs()[pri:0, instance:org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent@48f278eb]" started-at="2022-08-25T10:55:28 IST" name="configAs" finished-at="2022-08-25T10:55:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAs -->
+      </class> <!-- org.shophunt.testscript.VerifyTheCreateSubCategoryPageComponent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
