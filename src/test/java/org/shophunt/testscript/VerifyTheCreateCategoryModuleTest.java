@@ -3,6 +3,7 @@ package org.shophunt.testscript;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.shophunt.genericutility.BaseClass;
 import com.shophunt.genericutility.ExcelUtility;
@@ -12,8 +13,8 @@ import com.shophunt.pomrepository.AdminCreateCategory;
 import com.shophunt.pomrepository.AdminHomePage;
 import com.shophunt.pomrepository.Login;
 
-
-public class VerifyTheCreateCategoryModule extends BaseClass {
+@Listeners(com.shophunt.genericutility.Listener.class)
+public class VerifyTheCreateCategoryModuleTest extends BaseClass {
 
 	@Test (groups= {"smoke"})
 	public void CreateCategory() throws Throwable	
@@ -63,7 +64,7 @@ public class VerifyTheCreateCategoryModule extends BaseClass {
 //				{
 //					System.out.println(actualresult);
 //				}
-			String expectedresult="Well done! Category Created !!";
+				String expectedresult="Well done! Category Created !!";
 				
 				//***Assertion***
 				Assert.assertTrue(actualresult.contains(expectedresult));

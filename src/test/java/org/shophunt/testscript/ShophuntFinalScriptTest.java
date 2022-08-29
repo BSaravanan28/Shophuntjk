@@ -5,6 +5,7 @@ import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.shophunt.genericutility.BaseClass;
@@ -17,8 +18,8 @@ import com.shophunt.pomrepository.AdminHomePage;
 import com.shophunt.pomrepository.Login;
 import com.shophunt.pomrepository.UserHomePage;
 import com.shophunt.pomrepository.Wishlist;
-
-public class ShophuntFinalScript extends BaseClass {
+@Listeners(com.shophunt.genericutility.Listener.class)
+public class ShophuntFinalScriptTest extends BaseClass {
 	
 			// *** Create an object for Utitily ***
 			FileUtility fu=new FileUtility();
@@ -139,11 +140,11 @@ public class ShophuntFinalScript extends BaseClass {
 			Wishlist w= new Wishlist(driver);
 			w.VerifyWishlist(product);
 
-			TakesScreenshot ts =(TakesScreenshot)driver;
-			//WebElement w = driver.findElement(By.xpath("//div[@class=\"col-md-12 col-sm-12 shopping-cart-table \"]"));
-			File src=ts.getScreenshotAs(OutputType.FILE);
-			File des=new File(".\\screenshot\\productaddedtoaddtocard1.jpg");
-			FileUtils.copyFile(src,des);
+//			TakesScreenshot ts =(TakesScreenshot)driver;
+//			//WebElement w = driver.findElement(By.xpath("//div[@class=\"col-md-12 col-sm-12 shopping-cart-table \"]"));
+//			File src=ts.getScreenshotAs(OutputType.FILE);
+//			File des=new File(".\\screenshot\\productaddedtoaddtocard1.jpg");
+//			FileUtils.copyFile(src,des);
 				
 		}
 

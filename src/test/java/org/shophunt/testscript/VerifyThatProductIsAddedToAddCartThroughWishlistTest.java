@@ -2,6 +2,7 @@ package org.shophunt.testscript;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.shophunt.genericutility.BaseClass;
 import com.shophunt.genericutility.ExcelUtility;
@@ -12,7 +13,8 @@ import com.shophunt.pomrepository.Login;
 import com.shophunt.pomrepository.UserHomePage;
 import com.shophunt.pomrepository.Wishlist;
 
-public class VerifyThatProductIsAddedToAddCartThroughWishlist extends BaseClass {
+@Listeners(com.shophunt.genericutility.Listener.class)
+public class VerifyThatProductIsAddedToAddCartThroughWishlistTest extends BaseClass {
 
 	@Test (groups= {"smoke"})
 	public void Wishlist() throws Throwable	
@@ -64,8 +66,8 @@ public class VerifyThatProductIsAddedToAddCartThroughWishlist extends BaseClass 
 //			System.out.println("Product is successfully added to addtocart through wishlist");
 //		}
 		
-		//***Assertion***
 		String expectedresult="APPLE IPHONE 13 PRO MAX";
+		//***Assertion***
 		//Assert.assertEquals(actualresult,expectedresult);
 		Assert.assertTrue(actualresult.contains(expectedresult));
 		

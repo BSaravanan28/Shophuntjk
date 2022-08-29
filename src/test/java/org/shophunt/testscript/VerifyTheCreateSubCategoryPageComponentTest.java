@@ -2,6 +2,7 @@ package org.shophunt.testscript;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.shophunt.genericutility.BaseClass;
 import com.shophunt.genericutility.ExcelUtility;
@@ -11,8 +12,8 @@ import com.shophunt.genericutility.WebDriverUtility;
 import com.shophunt.pomrepository.AdminCreateSubCategory;
 import com.shophunt.pomrepository.AdminHomePage;
 import com.shophunt.pomrepository.Login;
-
-public class VerifyTheCreateSubCategoryPageComponent extends BaseClass {
+@Listeners(com.shophunt.genericutility.Listener.class)
+public class VerifyTheCreateSubCategoryPageComponentTest extends BaseClass {
 	
 		@Test (groups= {"smoke"})
 		public void CreateSubcategory() throws Throwable	

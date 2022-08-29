@@ -18,7 +18,7 @@ import com.shophunt.pomrepository.UserHomePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	
+	public static WebDriver sdriver;
 	public WebDriver driver;
 	
 	// *** Create an object for Utitily ***
@@ -58,6 +58,8 @@ public class BaseClass {
 		//Maximize the Browser 
 		wu.waitForElementInDOM(driver);
 		driver.manage().window().maximize();
+		sdriver=driver;
+		
 		
 	}
 	
